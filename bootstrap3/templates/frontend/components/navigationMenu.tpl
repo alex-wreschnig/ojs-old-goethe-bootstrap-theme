@@ -23,7 +23,7 @@
 			{if !empty($navigationMenuItemAssignment->children)}
 				{assign var="hasChildren" value=true}
 			{/if}
-			<li class="{$liClass|escape}{if $hasChildren} dropdown{/if}">
+			<li class="{$liClass|escape}{if $hasChildren} dropdown{else}{if $currentUrl == $navigationMenuItemAssignment->navigationMenuItem->getUrl()} current{/if}{/if}">
 				<a href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}"{if $hasChildren} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{/if}>
 					{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
 					{if $hasChildren}
@@ -34,7 +34,7 @@
 					<ul class="dropdown-menu {if $id === 'navigationUser'}dropdown-menu-right{/if}">
 						{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
 							{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-								<li class="{$liClass|escape}">
+								<li class="{$liClass|escape}{if $currentUrl == $childNavigationMenuItemAssignment->navigationMenuItem->getUrl()} current{/if}">
 									<a href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
 										{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
 									</a>
