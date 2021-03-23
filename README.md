@@ -1,8 +1,16 @@
-# Bootstrap3 for OJS 3+
+# Goethe-Lexicon - Original Work (Bad Idea branch)
+
+This branch documents the original changes made for the Goethe-Lexicon theme for OJS, built on top of the Bootstrap3 theme written by natewr. This repository is not under active development, and the Bad Idea branch will not even be merged back into Master; instead, this is meant to allow users to pull from this branch as part of developing a more sustainable repository for a theme and/or subtheme.
+
+Since Git wouldn't easily let me move files from an unnecessary directory into the repo root, and because this branch isn't actively developed so we're not losing much information on this branch, I forewent a git mv and just mv'ed everything. There's some carnage in the commit history.
+
+The documentation from the real Bootstrap3 theme continues below.
+
+## Bootstrap3 Theme
 
 A community-built theme for OJS 3+ that implements Bootstrap 3 components.
 
-## Installation
+### Installation
 
 1. Download the [latest release](https://github.com/NateWr/bootstrap3/releases).
 2. Unpack the .zip file and move the `bootstrap3` directory to your OJS installation at `/plugins/themes/bootstrap3`.
@@ -11,7 +19,7 @@ A community-built theme for OJS 3+ that implements Bootstrap 3 components.
 
 You can now see the Bootstrap 3 theme on your website. Go back to the `Settings` > `Website` > `Appearance` page (or refresh the page if it is still open) to view options to switch to any of the bundled Bootstrap 3 themes.
 
-## Version Compatibility
+### Version Compatibility
 
 Some versions of the Bootstrap3 theme are only compatible with certain releases of OJS. This release list indicates which versions are compatible.
 
@@ -26,13 +34,13 @@ Some versions of the Bootstrap3 theme are only compatible with certain releases 
 * **Bootstrap3 v1.0.1** is compatible with OJS 3.0.1.
 * **Bootstrap3 v1.0.0** is compatible with OJS 3.0.0.
 
-## Project Aims
+### Project Aims
 
 This project was born at the [2016 PKP Sprint](https://pkp.sfu.ca/2016/04/29/sprinting-in-montreal/) in Montreal. It aims to provide a common starting point for anyone who wants to build a custom theme for OJS 3.0.
 
 The goal was to stay true to Bootstrap 3's core components, so that developers familiar with the HTML, CSS and JavaScript framework can more easily read and customize the code base. By sticking close to Bootstrap 3's supported components, the theme is able to more easily leverage the many existing Bootstrap 3 resources out there.
 
-## Contribution
+### Contribution
 
 This theme is a work-in-progress. It may not support all features of OJS 3.0 and some of the bundled themes could use some polish. It's intended to act as a base for custom development, but many journals may use it out-of-the-box.
 
@@ -55,7 +63,7 @@ Thanks to everyone who has contributed to this theme:
 - Marco Tullney, @mtub
 - Dennis Müller, @dennmuel ([UB Mannheim](https://www.bib.uni-mannheim.de/))
 
-## Changelog
+### Changelog
 
 **3.1.2-5** (2019-05-01)
 * Fix: #118. Glyphicons URL incorrect
